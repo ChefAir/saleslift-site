@@ -1,1 +1,34 @@
-fd
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 800 180"
+     width="800" height="180"
+     preserveAspectRatio="xMidYMid meet">
+
+  <!-- Brand accent color -->
+  <defs>
+    <linearGradient id="liftGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%"  stop-color="#f18701"/>
+      <stop offset="100%" stop-color="#ffa937"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Growth-arrow icon -->
+  <g transform="translate(110,90) scale(1.1)">
+    <!-- Circle backdrop (optional) -->
+    <circle r="68" fill="url(#liftGrad)" opacity="0.15" />
+    <!-- Arrow shaft -->
+    <path d="M0 35 V-50" stroke="#f18701" stroke-width="10" stroke-linecap="round"/>
+    <!-- Arrow head -->
+    <path d="M0 -50 L-18 -25 L18 -25 Z" fill="#f18701"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="220" y="110"
+        font-family="Montserrat, sans-serif"
+        font-size="72"
+        font-weight="700"
+        fill="#0e2749"
+        letter-spacing="0.4">
+    SalesLift
+  </text>
+</svg>

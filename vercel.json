@@ -17,10 +17,10 @@
     }
   ],
   "env": {
-    "RECAPTCHA_SECRET_KEY": "@recaptcha_secret_key",
-    "SMTP_HOST":            "@smtp_host",
-    "SMTP_PORT":            "@smtp_port",
-    "SMTP_USER":            "@smtp_user",
-    "SMTP_PASS":            "@smtp_pass"
+    "RECAPTCHA_SECRET_KEY": "<YOUR_RECAPTCHA_KEY>",
+    "SMTP_HOST":            "mail.privateemail.com",
+    "SMTP_PORT":            "587",
+    "SMTP_USER":            "<YOU@YOURDOMAIN.COM>",
+    "SMTP_PASS":            "<YOUR_EMAIL_PASSWORD>"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build" }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/$1.js"
+    },
+    {
+      "src": "/(.*)",
+      "headers": {
+        "Cache-Control": "public, max-age=0, must-revalidate"
+      },
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "RECAPTCHA_SECRET_KEY": "@recaptcha_secret_key",
+    "SMTP_HOST":            "@smtp_host",
+    "SMTP_PORT":            "@smtp_port",
+    "SMTP_USER":            "@smtp_user",
+    "SMTP_PASS":            "@smtp_pass"
+  }
+}
